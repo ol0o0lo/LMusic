@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html ondragstart="return false;">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="shortcut icon" href="img/icon/favicon.ico">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/click.js"></script>
+
+	</head>
+	<body>
+		<div id="background">
+		</div>
+
+		<div id="top">
+			<img id="more" src="img/icon/159841.png">
+			<img id="LoginButton" src="img/icon/student.png">
+			<div id="hitokotoAPI"><span id="hitokoto">雨，何时停？</span>
+				<span id="hitokotoAuthor">
+					「 秋之回忆 」
+				</span></div>
+		</div>
+		<div id="loginPart">
+			<form id="loginForm" action="http://konglan.studio/" method="post">
+				<div class="formGroup">
+					<label for="loginUser">用户名</label>
+					<input type="text" name="name" id="loginUser" placeholder="网易云账号">
+				</div>
+
+				<div class="formGroup">
+					<label for="loginPassword">密码</label>
+					<input type="password" name="password" id="loginPassword" placeholder="密码">
+				</div>
+				
+				<button type="button" id="loginSubmit" name="submitLogin">
+					<span>登录</span>
+					<span class="text-active">登录中...</span>
+				</button>
+
+			</form>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div id="sidebar">
+			<div id="hitokotoHistory" class="sidebarOptions">
+				<sapn>一言历史记录</sapn><br>
+				<img src="img/icon/more.png">
+			</div>
+			<div id="HistoryContent" class="content">
+			</div>
+
+			<div id="a" class="sidebarOptions">
+				<sapn>功能界面</sapn><br>
+				<img src="img/icon/more.png">
+			</div>
+			<div id="aa" class="content">
+			</div>
+
+			<div id="b" class="sidebarOptions">
+				<sapn>二言历史记录</sapn><br>
+				<img src="img/icon/more.png">
+			</div>
+			<div id="bb" class="content">
+
+			</div>
+
+		</div>
+		<div id="sidebarCover"></div>
+		<div id="music_interface">
+			<div id="music_name">
+				<div id="music_nameSroll">
+					<span>路过世界的旅行家</span> - <span>云の泣</span>
+				</div>
+			</div>
+			<div id="album">
+				<img src="img/background/Firewatch.jpg">
+				<img src="img/background/Firewatch.jpg">
+				<img src="img/icon/phonograph.png">
+			</div>
+			<div id="progressParts">
+				<span id="nowTime">00:00</span>
+				<span>&nbsp; / &nbsp;</span>
+				<span id="allTime">00:00</span>
+				<div id="volumeParts">
+					<div id="mute">
+						<img src="img/icon/volume100.png">
+					</div>
+					<div id="volumeBarParts">
+						<div id="volumeBar">
+							<div id="volume"></div>
+							<div id="volumeNow"></div>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="playMethod">
+					<img src="img/icon/sequence_play.png">
+					<img src="img/icon/random_play.png">
+					<img src="img/icon/single_circulation.png">
+				</div>
+				<div id="progress">
+					<div id="progressAll"></div>
+					<div id="progressNow"></div>
+					<div id="progressPoint"></div>
+				</div>
+
+			</div>
+
+			<div id="control">
+				<img id="before" src="img/icon/608292.png">
+				<img id="play_pause" src="img/icon/pause.png">
+				<img id="next" src="img/icon/608291.png">
+			</div>
+		</div>
+
+		<div id="main_interface">
+			<div id="main_control">
+				<div>
+					<span>歌词</span>
+				</div>
+				<div>
+					<span>评论</span>
+				</div>
+				<div id="main_control_border">
+
+				</div>
+			</div>
+
+
+			<div id="lyric">
+				<!--
+				<p>要奔赴一切生而未见的风景</p>
+				<p>两侧草木渐次鲜明 像少年怀抱的憧憬</p>
+				-->
+			</div>
+
+			<div id="comments">
+				<!-- <div>
+					<div>
+						<img>
+					</div>
+					<div>
+						<span></span>
+						<span></span>
+						<span>
+							<img src="img/icon/like.png">
+							</span>
+						<span></span>
+					</div>
+					<div>
+						<span></span>
+					</div>
+				</div> -->
+			</div>
+		</div>
+
+		<div id="playListPart">
+			<div id="ListTip">
+				<img id="musicListTip" src="img/icon/open.png" alt="">
+				<img id="playListTip" src="img/icon/open.png" alt="">
+
+			</div>
+			<div id="playingList">
+				歌单列表
+			</div>
+			<div id="playList">
+				<!-- 			 <div class="List">
+ 					<img class="listCover" src="img/background/1457999343537120555_n.jpg">
+						<p class="listName">β受体阻滞剂与星辰</p>
+						<p class="listArtist">Kevinz/洛天依/言和</p>
+						<div class="listAdd"></div>
+						<div class="playing">
+							<div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+							
+						</div>
+				</div> -->
+			</div>
+			<div id="CloudPlayList">
+				<div id="user">
+					<div id="uesrCover">
+						<img src="http://p1.music.126.net/e0fZG8gfWSOdKxKZJWCC-A==/109951163851416993.jpg?param=400y200">
+					</div>
+					<div id="userAvatar">
+						<img src="http://p1.music.126.net/wDR_RYW6K6xlo4WZiGgbZA==/109951163564863303.jpg?param=100y100">
+					</div>
+					<div id="userName">
+						疯度__
+					</div>
+					<div id="userListTip">
+						<img src="img/icon/more.png">
+					</div>
+
+				</div>
+
+
+
+
+				<div id="uesrList">
+					<!-- 
+					<div class="uesrList">
+						<div class="uesrListCover">
+							<img src="https://p2.music.126.net/ZIhb8H-SfKvwNf-3LleqhA==/3388694840126687.jpg?param=100y100" >
+						</div>
+						<div class="uesrListName">
+							<p class="uesrListName_n">精选100 一生必听的世间最美纯音乐</p>
+							<p class="uesrListName_d">我有千百种风情你但说是要还是不要<br>我有千百种风情你但说是要还是不要</p>
+						</div>
+					</div>					
+					<div class="uesrList"><div class="uesrListCover"><img></div><div class="uesrListName"><p class="uesrListName_n"></p><p class="uesrListName_d"></p></div></div>
+					
+ -->
+				</div>
+
+
+				<div id="Cloud">
+					<div id="cloudCover">
+						<img src="https://s2.ax1x.com/2019/11/20/MhJaFK.th.jpg">
+					</div>
+					<div id="CloudListTipName">今日推荐歌单</div>
+					<div id="CloudListTip">
+						<img src="img/icon/more.png">
+					</div>
+				</div>
+
+
+				<div id="CloudList">
+					<!-- <div class="CloudList">
+						<div class="CloudListCover"><img></div>
+						<div class="CloudListName">
+							<p class="CloudListName_n"></p>
+							<p class="CloudListName_d"></p>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<!-- 567656528 -->
+
+		<div id="audio">
+			<audio src="http://music.163.com/song/media/outer/url?id=519286594.mp3" id="music"></audio>
+		</div>
+		<!-- 用来间接复制一言 -->
+		<input type="text" id="hitokotoCopy" value="双击一言历史记录可复制" />
+		<div id="hitokotoCopyTips">已复制</div>
+
+
+
+
+
+
+
+	</body>
+</html>
+
+<!-- <div class='List'>
+	<img class='listCover'>
+	<p class='listName'></p>
+	<p class='listArtist'></p>
+	<div class='listAdd'>
+	</div>
+</div> -->
