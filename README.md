@@ -1,3 +1,2 @@
 # LMusic
-在线播放网易云音乐
-网址：http://m.konglan.studio
+一个可以在线播放网易云音乐的第三方Web播放器
